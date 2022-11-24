@@ -12,7 +12,11 @@
 			<h2>How to use</h2>
 
 			<p>
-				The base API url point <u>{host}/api/word?length=10&amount=10&order=random</u>
+				The base API url point <code
+					><a href="/api/word?length=10&amount=10&order=random"
+						>{host}/api/word?length=10&amount=10&order=random</a
+					>
+				</code>
 			</p>
 
 			<h3>Parameter</h3>
