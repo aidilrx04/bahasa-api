@@ -1,0 +1,14 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("PRIVATE_DB_URL")
+}
+
+model words {
+  id     Int    @id @default(autoincrement())
+  word   String @db.Char(255)
+  length Int
+}

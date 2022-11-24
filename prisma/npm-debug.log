@@ -1,0 +1,79 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\aidilrx04\\Desktop\\projects\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '@prisma/client@4.6.1'
+1 verbose cli ]
+2 info using npm@1.3.26
+3 info using node@v18.12.0
+4 warn package.json sander@0.5.1 No README data
+5 warn package.json punycode@2.1.1 punycode is also the name of a node core module.
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ '@prisma/client@4.6.1', null ]
+8 verbose cache add name=undefined spec="@prisma/client@4.6.1" args=["@prisma/client@4.6.1",null]
+9 verbose parsed url Url {
+9 verbose parsed url   protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: '@prisma/client@4.6.1',
+9 verbose parsed url   path: '@prisma/client@4.6.1',
+9 verbose parsed url   href: '@prisma/client@4.6.1'
+9 verbose parsed url }
+10 verbose cache add name="" spec="prisma/client@4.6.1" args=["","prisma/client@4.6.1"]
+11 verbose parsed url Url {
+11 verbose parsed url   protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'prisma/client@4.6.1',
+11 verbose parsed url   path: 'prisma/client@4.6.1',
+11 verbose parsed url   href: 'prisma/client@4.6.1'
+11 verbose parsed url }
+12 verbose cache add name="prisma/client" spec="4.6.1" args=["prisma/client","4.6.1"]
+13 verbose parsed url Url {
+13 verbose parsed url   protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: '4.6.1',
+13 verbose parsed url   path: '4.6.1',
+13 verbose parsed url   href: '4.6.1'
+13 verbose parsed url }
+14 verbose addNamed [ 'prisma/client', '4.6.1' ]
+15 verbose addNamed [ '4.6.1', '4.6.1' ]
+16 silly lockFile 2086e21b-prisma-client-4-6-1 prisma/client@4.6.1
+17 verbose lock prisma/client@4.6.1 C:\Users\aidilrx04\AppData\Local\npm-cache\2086e21b-prisma-client-4-6-1.lock
+18 silly lockFile 2086e21b-prisma-client-4-6-1 prisma/client@4.6.1
+19 silly lockFile 2086e21b-prisma-client-4-6-1 prisma/client@4.6.1
+20 error Error: No dist in undefined package
+20 error     at next (C:\Users\aidilrx04\Desktop\projects\node_modules\npm\lib\cache.js:753:26)
+20 error     at C:\Users\aidilrx04\Desktop\projects\node_modules\npm\lib\cache.js:746:5
+20 error     at saved (C:\Users\aidilrx04\Desktop\projects\node_modules\npm\node_modules\npm-registry-client\lib\get.js:142:7)
+20 error     at C:\Users\aidilrx04\Desktop\projects\node_modules\npm\node_modules\graceful-fs\polyfills.js:133:7
+20 error     at FSReqCallback.oncomplete (node:fs:197:23)
+21 error If you need help, you may report this *entire* log,
+21 error including the npm and node versions, at:
+21 error     <http://github.com/isaacs/npm/issues>
+22 error System Windows_NT 10.0.19044
+23 error command "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\aidilrx04\\Desktop\\projects\\node_modules\\npm\\bin\\npm-cli.js" "install" "@prisma/client@4.6.1"
+24 error cwd C:\Users\aidilrx04\Desktop\projects\bahasa-api\prisma
+25 error node -v v18.12.0
+26 error npm -v 1.3.26
+27 verbose exit [ 1, true ]
