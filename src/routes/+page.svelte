@@ -84,3 +84,5 @@
 		</p>
 	</section>
 </main>
+
+<footer>2022 aidilrx04, built using <a href="kit.svelte.dev">SvelteKit</a></footer>
