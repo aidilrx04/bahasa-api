@@ -14,7 +14,7 @@
 			<p>
 				The base API url point <code
 					><a href="/api/word?length=10&amount=10&order=random"
-						>{host}/api/word?length=10&amount=10&order=random</a
+						>{host}/api/word?length=10&amount=10&amp;order=random</a
 					>
 				</code>
 			</p>
