@@ -3,6 +3,10 @@
 	const GITHUB_REPO_URL = 'https://github.com/aidilrx04/bahasa-api';
 </script>
 
+<svelte:head>
+	<meta name="google-site-verification" content="k02xarkW9i_LIXjSEX--j2KwfpENd4rqRuau9ynMhkc" />
+</svelte:head>
+
 <main>
 	<h1>Welcome to BahasaApi</h1>
 	<p>Welcome to Bahasa API. A simple API built using SvelteKit</p>
