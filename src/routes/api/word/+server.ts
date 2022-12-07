@@ -15,6 +15,10 @@ const options: RequestQueryOptions = {
 };
 
 export const GET: RequestHandler = async (req) => {
+	if (req.request.method === 'OPTIONS') {
+		return new Response(new Blob(), { status: 200 });
+	}
+
 	const searchParams = req.url.searchParams;
 	const requestOptions: RequestQueryOptions = {
 		amount: (searchParams.get('amount') ?? options.amount) as number,
@@ -36,8 +40,8 @@ export const GET: RequestHandler = async (req) => {
 			}
 		});
 	} else {
-		const sqlString = `SELECT * FROM words WHERE length < 5 LIMIT 10`;
-		console.log(sqlString);
+		// const sqlString = `SELECT * FROM words WHERE length < 5 LIMIT 10`;
+		// console.log(sqlString);
 		result =
 			await prisma.$queryRaw`SELECT * FROM words WHERE length < ${requestOptions.length} ORDER BY RAND() LIMIT ${requestOptions.amount}`;
 	}
