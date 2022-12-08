@@ -41,7 +41,7 @@ export const GET: RequestHandler = async (req) => {
 		});
 	} else {
 		result =
-			await prisma.$queryRaw`SELECT * FROM words WHERE length < ${requestOptions.length} ORDER BY RAND() LIMIT ${requestOptions.amount}`;
+			await prisma.$queryRaw`SELECT * FROM words WHERE length <= ${requestOptions.length} ORDER BY RAND() LIMIT ${requestOptions.amount}`;
 	}
 
 	req.setHeaders({
