@@ -44,7 +44,10 @@ export const GET: RequestHandler = async (req) => {
 			await prisma.$queryRaw`SELECT * FROM words WHERE length < ${requestOptions.length} ORDER BY RAND() LIMIT ${requestOptions.amount}`;
 	}
 
-	return new Response(JSON.stringify(result));
+	req.setHeaders({
+		'Content-Type': 'application/json'
+	});
+	return new Response(JSON.stringify(result), {});
 };
 
 const determineOrder = (
